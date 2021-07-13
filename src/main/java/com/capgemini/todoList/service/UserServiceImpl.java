@@ -15,4 +15,15 @@ public class UserServiceImpl implements IUserService {
     public List<User> getUsers() {
         return userRepository.getUsers();
     }
+
+    @Override
+    public User getUserById(int id) {
+        return userRepository.getUserById(id);
+    }
+    @Override
+    public boolean checkUserPassword(User user, String password) {
+        if (user.getPassword().equals(password))
+            return true;
+        return false;
+    }
 }
