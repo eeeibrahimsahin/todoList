@@ -8,4 +8,6 @@ public interface ITodoItemRepository {
     public List<TodoItem> getTodoItems();
     public TodoItem getTodoItemById(int id);
     public TodoItem createTodoItem(TodoItem todoItem);
+
+    TodoItem deleteItem(int id);
 }

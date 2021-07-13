@@ -11,12 +11,15 @@ public class User {
     private List<TodoList> todoLists;
 
     //This constructor is created for creating dummy data.
-    public User(int id, String firstname, String lastname, String username, String password) {
+
+
+    public User(int id, String firstname, String lastname, String username, String password, List<TodoList> todoLists) {
         this.id = id;
         this.firstname = firstname;
         this.lastname = lastname;
         this.username = username;
         this.password = password;
+        this.todoLists = todoLists;
     }
 
     public int getId() {

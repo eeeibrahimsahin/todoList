@@ -19,4 +19,9 @@ public class TodoItemService implements ITodoItemService{
     public TodoItem createTodoItem(TodoItem todoItem) {
         return todoItemRepository.createTodoItem(todoItem);
     }
+
+    @Override
+    public TodoItem deleteItem(int id) {
+        return todoItemRepository.deleteItem(id);
+    }
 }

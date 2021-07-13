@@ -9,7 +9,6 @@ public class TodoList {
 
     //This constructor is created for creating dummy data.
 
-
     public TodoList(int id, String name, List<TodoItem> todoItemList) {
         this.id = id;
         this.name = name;

@@ -7,4 +7,6 @@ import java.util.List;
 public interface ITodoItemService {
     public List<TodoItem> getTodoItems();
     public TodoItem createTodoItem(TodoItem todoItem);
+
+    TodoItem deleteItem(int id);
 }
